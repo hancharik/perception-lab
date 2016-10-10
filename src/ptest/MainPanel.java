@@ -38,7 +38,7 @@ public class MainPanel extends JPanel implements ActionListener{
           endLabel.setBounds(320,100,600,280);
           setLabel();
           add(endLabel);
-        startButton = new JButton("begin test");
+        startButton = new JButton("begin game");//startButton = new JButton("begin test");
         startButton.setBounds(550,340,120,40);
         startButton.addActionListener(this);
         add(startButton);
@@ -67,7 +67,7 @@ public class MainPanel extends JPanel implements ActionListener{
           double totalTime = (unixTimeEndTest - ptest.Ptest.unixTimeStartTest)/1000;
           System.out.println("total time in seconds is " + (int)totalTime/60 + " minutes and " + totalTime%60 + " seconds");// System.out.println("the array size is " + resultSet.size() + ", total time in seconds is " + totalTime);
           pPanel.wordRandomizer.createFile(resultSet);
-          
+         
         }
     } // end add panel
     
@@ -132,10 +132,12 @@ endLabel.setFont(new Font(endLabelFont.getName(), Font.PLAIN, fontSizeToUse));
                     
                      
                     try {
-                        addPanel();
+                        
                         startButton.setVisible(false);
                         endLabel.setVisible(false);
                         startButton.setText("quit");
+                        addPanel();
+                        repaint();
                     } catch (IOException ex) {
                         Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
                     } // end try/catch

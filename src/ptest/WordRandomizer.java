@@ -58,7 +58,7 @@ writer.close();
 
 // while we're here, let's mail this file
 
-//  MailResults mailResultsRightNow = new MailResults(timestamp);
+  MailResults mailResultsRightNow = new MailResults(timestamp);
 
 
 
