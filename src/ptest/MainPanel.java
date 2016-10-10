@@ -70,7 +70,7 @@ public class MainPanel extends JPanel implements ActionListener{
         pPanel.setBounds(140,30,1000,600);
         add(pPanel);
         }else{
-          setBackground(Color.GREEN);  
+          changePicture(1);//setBackground(Color.GREEN);  
           startButton.setVisible(true);
            endLabel.setVisible(true);
           endLabel.setText("Thank You for participating.");//endLabel = new JLabel("Thank You");
@@ -150,7 +150,7 @@ e.setFont(new Font(endLabelFont.getName(), Font.PLAIN, fontSizeToUse));
                     
                      
                     try {
-                        
+                        changePicture(2);
                         startButton.setVisible(false);
                         endLabel.setVisible(false);
                         titleLabel.setVisible(false);
@@ -176,5 +176,18 @@ e.setFont(new Font(endLabelFont.getName(), Font.PLAIN, fontSizeToUse));
     	g.drawImage(backgroundImage, 0, 0, this);
      }
      
+      
+     private void changePicture(int choice){
+         
+         switch(choice){
+             case 1 :   background = new ImageIcon("images/jacuzzi.jpg");  backgroundImage = background.getImage()  ; break;
+              case 2 :  background = new ImageIcon("images/white.png"); backgroundImage = background.getImage()  ; break;
+         }
+       
+         
+     } 
+      
+      
+      
     
 } // end class

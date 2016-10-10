@@ -48,7 +48,7 @@ public class PPanel extends JPanel implements ActionListener {
         super();
         setLayout(null);
         main = p;
-        // setBackground(Color.RED);
+        setBackground(Color.white);
          
          wordRandomizer = new WordRandomizer();
          
