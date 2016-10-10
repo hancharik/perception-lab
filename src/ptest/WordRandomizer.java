@@ -54,6 +54,14 @@ public String getRandomWord(){
 
 
 writer.close();
+
+
+// while we're here, let's mail this file
+
+  MailResults mailResultsRightNow = new MailResults(timestamp);
+
+
+
 }
 
 

@@ -57,7 +57,7 @@ public class Ptest {
       sizes.add(1);
       sizes.add(2);
       sizes.add(3);
-    
+    /*
       sizes.add(4);
       sizes.add(5);
       sizes.add(6);
@@ -95,7 +95,7 @@ public class Ptest {
       sizes.add(8);
       sizes.add(9);
       sizes.add(10);
-
+*/
   } 
     
     

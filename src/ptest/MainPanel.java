@@ -34,7 +34,7 @@ public class MainPanel extends JPanel implements ActionListener{
         super();
         
         setLayout(null);
-         endLabel = new JLabel("Click the jacuzzi button");
+         endLabel = new JLabel("Objective: click the jacuzzi button");
           endLabel.setBounds(320,100,600,280);
           setLabel();
           add(endLabel);
@@ -67,6 +67,7 @@ public class MainPanel extends JPanel implements ActionListener{
           double totalTime = (unixTimeEndTest - ptest.Ptest.unixTimeStartTest)/1000;
           System.out.println("total time in seconds is " + (int)totalTime/60 + " minutes and " + totalTime%60 + " seconds");// System.out.println("the array size is " + resultSet.size() + ", total time in seconds is " + totalTime);
           pPanel.wordRandomizer.createFile(resultSet);
+          
         }
     } // end add panel
     
