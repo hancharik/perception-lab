@@ -23,7 +23,8 @@ public class Ptest {
     static int rows = 3;//9
     static int columns = 3;//5
     static PFrame p;
-    
+    static long unixTimeStartTest;
+     long unixTimeEnd;
     static int attempts;
     static ArrayList<Integer> sizes;
    // static int[] sizes = {1,2,3,4};
@@ -33,6 +34,7 @@ public class Ptest {
     
     public static void main(String[] args) {
       
+        unixTimeStartTest = System.currentTimeMillis();
         
         fillSizes();
         
@@ -55,7 +57,45 @@ public class Ptest {
       sizes.add(1);
       sizes.add(2);
       sizes.add(3);
-     
+    
+      sizes.add(4);
+      sizes.add(5);
+      sizes.add(6);
+      sizes.add(7);
+      sizes.add(8);
+      sizes.add(9);
+      sizes.add(10);
+      sizes.add(1);
+      sizes.add(2);
+      sizes.add(3);
+      sizes.add(4);
+      sizes.add(5);
+      sizes.add(6);
+      sizes.add(7);
+      sizes.add(8);
+      sizes.add(9);
+      sizes.add(10);
+      sizes.add(1);
+      sizes.add(2);
+      sizes.add(3);
+      sizes.add(4);
+      sizes.add(5);
+      sizes.add(6);
+      sizes.add(7);
+      sizes.add(8);
+      sizes.add(9);
+      sizes.add(10);
+      sizes.add(1);
+      sizes.add(2);
+      sizes.add(3);
+      sizes.add(4);
+      sizes.add(5);
+      sizes.add(6);
+      sizes.add(7);
+      sizes.add(8);
+      sizes.add(9);
+      sizes.add(10);
+
   } 
     
     
