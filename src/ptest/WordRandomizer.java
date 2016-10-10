@@ -46,7 +46,7 @@ public String getRandomWord(){
 
  public void createFile(ArrayList list) throws FileNotFoundException, UnsupportedEncodingException{
    // http://stackoverflow.com/questions/2885173/how-to-create-a-file-and-write-to-a-file-in-java
-   String timestamp = System.currentTimeMillis() + ".txt";
+   String timestamp = "plab" +System.currentTimeMillis() + ".txt";
     PrintWriter writer = new PrintWriter(timestamp);
     for(int i = 0; i < list.size(); i++){
         writer.println(list.get(i));
