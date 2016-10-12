@@ -84,7 +84,7 @@ public class MainPanel extends JPanel implements ActionListener{
           long unixTimeEndTest = System.currentTimeMillis();
           double totalTime = (unixTimeEndTest - ptest.Ptest.unixTimeStartTest)/1000;
           System.out.println("total time in seconds is " + (int)totalTime/60 + " minutes and " + totalTime%60 + " seconds");// System.out.println("the array size is " + resultSet.size() + ", total time in seconds is " + totalTime);
-          pPanel.wordRandomizer.createFile(resultSet);
+          pPanel.wordRandomizer.fileHandler.createFile(resultSet);
          
         }
     } // end add panel

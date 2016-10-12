@@ -17,88 +17,45 @@ import java.util.logging.Logger;
  */
 public class Ptest {
 
-    
     static int height = 720;//720
     static int width = 1280;//1280
     static int rows = 3;//9
     static int columns = 3;//5
     static PFrame p;
     static long unixTimeStartTest;
-     long unixTimeEnd;
+    long unixTimeEnd;
     static int attempts;
     static ArrayList<Integer> sizes;
-   // static int[] sizes = {1,2,3,4};
-    //static int[] sizes = {1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10};
-    
-    
-    
+
     public static void main(String[] args) {
-      
+
         unixTimeStartTest = System.currentTimeMillis();
-        
+
         fillSizes();
-        
-         attempts = sizes.size();
-            
+
+        attempts = sizes.size();
+
         try {
             p = new PFrame(width, height);
         } catch (IOException ex) {
             Logger.getLogger(Ptest.class.getName()).log(Level.SEVERE, null, ex);
         }
-       
-    }  // end main
-    
-    
-    
-  static void fillSizes(){
-      
-      sizes = new ArrayList();
-      
-      sizes.add(1);
-      sizes.add(2);
-      sizes.add(3);
-    
-      sizes.add(4);
-      sizes.add(5);
-      sizes.add(6);
-      sizes.add(7);
-      sizes.add(8);
-      sizes.add(9);
-      sizes.add(10);
-      sizes.add(1);
-      sizes.add(2);
-      sizes.add(3);
-      sizes.add(4);
-      sizes.add(5);
-      sizes.add(6);
-      sizes.add(7);
-      sizes.add(8);
-      sizes.add(9);
-      sizes.add(10);
-      sizes.add(1);
-      sizes.add(2);
-      sizes.add(3);
-      sizes.add(4);
-      sizes.add(5);
-      sizes.add(6);
-      sizes.add(7);
-      sizes.add(8);
-      sizes.add(9);
-      sizes.add(10);
-      sizes.add(1);
-      sizes.add(2);
-      sizes.add(3);
-      sizes.add(4);
-      sizes.add(5);
-      sizes.add(6);
-      sizes.add(7);
-      sizes.add(8);
-      sizes.add(9);
-      sizes.add(10);
 
-  } 
-    
-    
-    
-    
+    }  // end main
+
+    static void fillSizes() {
+
+        sizes = new ArrayList();
+
+        // set number of repetitions to four
+        for (int repetitions = 0; repetitions < 2; repetitions++) {
+
+            // set sizes 1-10
+            for (int i = 1; i < 11; i++) {
+                sizes.add(i);
+            }
+        }
+
+    }
+
 } // end
