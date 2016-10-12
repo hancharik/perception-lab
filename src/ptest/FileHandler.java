@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class FileHandler {
     
     WordRandomizer wordRandomizer;
-    String nameOfStudy = "dog";//= "plab";
+    String nameOfStudy  = "plab";//"dog";//
     
     public  FileHandler(WordRandomizer w){
     
@@ -55,7 +55,8 @@ writer.close();
 public void readCSVfile() throws FileNotFoundException, IOException{
     //http://stackoverflow.com/questions/13433407/java-read-csv-file-and-save-into-arrays
     BufferedReader CSVFile = 
-            new BufferedReader(new FileReader("three.csv"));  //new BufferedReader(new FileReader("words.csv"));
+           //new BufferedReader(new FileReader("three.csv")); 
+    new BufferedReader(new FileReader("words.csv"));
 
       String dataRow = CSVFile.readLine();
       wordRandomizer.wordsLikeJacuzzi.add(dataRow);
@@ -73,7 +74,7 @@ public void readCSVfile() throws FileNotFoundException, IOException{
       // Close the file once all data has been read.
       CSVFile.close();
 
-      //this is to fix a problem with the last line of the data set, problem unique to dtat set
+      //this is to fix a problem with the last line of the data set, problem unique to data set
       wordRandomizer.wordsLikeJacuzzi.remove(wordRandomizer.wordsLikeJacuzzi.size()-1);
      
 } // end read CSV file

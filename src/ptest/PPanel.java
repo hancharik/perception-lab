@@ -65,7 +65,7 @@ public class PPanel extends JPanel implements ActionListener {
         for (int i = 0; i < pButtons.size(); i++) {
 
             if (obj == pButtons.get(i)) {
-                if (pButtons.get(i).getText().equals("dog")) {//if (pButtons.get(i).getText().equals("jacuzzi")) {
+                if (pButtons.get(i).getText().equals("jacuzzi")) {//if (pButtons.get(i).getText().equals("dog")) {//
                     try {
                         unixTimeEnd = System.currentTimeMillis();
                         long totalTime = unixTimeEnd - unixTimeStart;
@@ -167,7 +167,7 @@ public class PPanel extends JPanel implements ActionListener {
 
                 JButton b = new JButton("" + buttonNumber);
                 if (buttonNumber == randomNumber) {
-                    b.setText("dog");//b.setText("jacuzzi");
+                   b.setText("jacuzzi");// b.setText("dog");//
                 } else {
                     b.setText(wordRandomizer.getRandomWord());
                 }
